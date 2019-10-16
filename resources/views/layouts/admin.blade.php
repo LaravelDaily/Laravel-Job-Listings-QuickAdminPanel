@@ -56,7 +56,7 @@
     </header>
 
     <div class="app-body">
-        @include('partials.menu')
+        @include('admin.partials.menu')
         <main class="main">
 
 

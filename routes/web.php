@@ -1,8 +1,10 @@
 <?php
 
-Route::redirect('/', '/login');
 Route::redirect('/home', '/admin');
 Auth::routes(['register' => false]);
+
+Route::get('/', 'JobController@index')->name('home');
+Route::resource('jobs', 'JobController')->only(['index', 'show']);
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
     Route::get('/', 'HomeController@index')->name('home');
