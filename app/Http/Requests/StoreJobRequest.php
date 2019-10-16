@@ -36,6 +36,9 @@ class StoreJobRequest extends FormRequest
             'categories'   => [
                 'array',
             ],
+            'salary'       => [
+                'required',
+            ],
         ];
     }
 }

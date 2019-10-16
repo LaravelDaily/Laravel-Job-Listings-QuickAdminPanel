@@ -25,6 +25,8 @@ class CreateJobsTable extends Migration
 
             $table->boolean('top_rated')->default(0)->nullable();
 
+            $table->string('salary');
+
             $table->timestamps();
 
             $table->softDeletes();

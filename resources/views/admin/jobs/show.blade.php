@@ -94,6 +94,14 @@
                     </tr>
                     <tr>
                         <th>
+                            {{ trans('cruds.job.fields.salary') }}
+                        </th>
+                        <td>
+                            {{ $job->salary }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
                             {{ trans('cruds.job.fields.top_rated') }}
                         </th>
                         <td>

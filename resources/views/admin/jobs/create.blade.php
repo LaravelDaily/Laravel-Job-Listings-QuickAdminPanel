@@ -125,6 +125,18 @@
                     {{ trans('cruds.job.fields.categories_helper') }}
                 </p>
             </div>
+            <div class="form-group {{ $errors->has('salary') ? 'has-error' : '' }}">
+                <label for="salary">{{ trans('cruds.job.fields.salary') }}*</label>
+                <input type="text" id="salary" name="salary" class="form-control" value="{{ old('salary', isset($job) ? $job->salary : '') }}" required>
+                @if($errors->has('salary'))
+                    <em class="invalid-feedback">
+                        {{ $errors->first('salary') }}
+                    </em>
+                @endif
+                <p class="helper-block">
+                    {{ trans('cruds.job.fields.salary_helper') }}
+                </p>
+            </div>
             <div class="form-group {{ $errors->has('top_rated') ? 'has-error' : '' }}">
                 <label for="top_rated">{{ trans('cruds.job.fields.top_rated') }}</label>
                 <input name="top_rated" type="hidden" value="0">

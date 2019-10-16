@@ -147,6 +147,8 @@ return [
             'company_helper'           => '',
             'categories'               => 'Categories',
             'categories_helper'        => '',
+            'salary'                   => 'Salary',
+            'salary_helper'            => '',
         ],
     ],
 ];

@@ -36,6 +36,9 @@ class UpdateJobRequest extends FormRequest
             'categories'   => [
                 'array',
             ],
+            'salary'       => [
+                'required',
+            ],
         ];
     }
 }

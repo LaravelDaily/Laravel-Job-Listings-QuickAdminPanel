@@ -44,6 +44,9 @@
                             {{ trans('cruds.job.fields.categories') }}
                         </th>
                         <th>
+                            {{ trans('cruds.job.fields.salary') }}
+                        </th>
+                        <th>
                             {{ trans('cruds.job.fields.top_rated') }}
                         </th>
                         <th>
@@ -79,6 +82,9 @@
                                 @foreach($job->categories as $key => $item)
                                     <span class="badge badge-info">{{ $item->name }}</span>
                                 @endforeach
+                            </td>
+                            <td>
+                                {{ $job->salary ?? '' }}
                             </td>
                             <td>
                                 {{ $job->top_rated ? trans('global.yes') : trans('global.no') }}
