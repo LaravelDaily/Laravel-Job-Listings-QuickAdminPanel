@@ -3,7 +3,7 @@
         <h4>Jobs by Location</h4>
         <ul class="cat-list">
             @foreach($sidebarLocations as $location)
-                <li><a class="justify-content-between d-flex" href="{{ route('jobs.index') }}?location={{ $location->id }}"><p>{{ $location->name }}</p><span>{{ $location->jobs_count }}</span></a></li>
+                <li><a class="justify-content-between d-flex" href="{{ route('locations.show', $location->id) }}"><p>{{ $location->name }}</p><span>{{ $location->jobs_count }}</span></a></li>
             @endforeach
         </ul>
     </div>
@@ -39,7 +39,7 @@
         <h4>Jobs by Category</h4>
         <ul class="cat-list">
             @foreach($sidebarCategories as $category)
-                <li><a class="justify-content-between d-flex" href="{{ route('jobs.index') }}?category={{ $category->id }}"><p>{{ $category->name }}</p><span>{{ $category->jobs_count }}</span></a></li>
+                <li><a class="justify-content-between d-flex" href="{{ route('categories.show', $category->id) }}"><p>{{ $category->name }}</p><span>{{ $category->jobs_count }}</span></a></li>
             @endforeach
         </ul>
     </div>

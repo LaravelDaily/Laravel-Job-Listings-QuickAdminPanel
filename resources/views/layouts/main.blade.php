@@ -21,6 +21,8 @@
     @include('partials.header')
 
         @include('partials.banner')
+
+        @yield('home')
             
         <!-- Start post Area -->
         <section class="post-area section-gap">
