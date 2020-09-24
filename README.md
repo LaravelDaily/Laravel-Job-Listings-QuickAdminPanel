@@ -1,6 +1,6 @@
-# Laravel 6 Job Listings with Adminpanel
+# Laravel 8 Job Listings with Adminpanel
 
-Transformed [free Bootstrap theme Joblisting](https://colorlib.com/wp/template/joblisting/) by [Colorlib](https://colorlib.com/wp/) into fully manageable Laravel 6 project with adminpanel generated with [QuickAdminPanel](https://quickadminpanel.com), 
+Transformed [free Bootstrap theme Joblisting](https://colorlib.com/wp/template/joblisting/) by [Colorlib](https://colorlib.com/wp/) into fully manageable Laravel 8 project with adminpanel generated with [QuickAdminPanel](https://quickadminpanel.com), 
 to manage all the jobs, companies and categories.
 
 - - - - -

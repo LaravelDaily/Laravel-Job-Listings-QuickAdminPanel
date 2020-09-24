@@ -17,7 +17,7 @@ class CompaniesTableSeeder extends Seeder
         foreach(range(1, 4) as $id)
         {
             $company = Company::create(['name' => $faker->unique()->company]);
-            $company->addMediaFromUrl(public_path('img/post.png'))->toMediaCollection('logo');
+            $company->addMedia(public_path('img/post.png'))->preservingOriginal()->toMediaCollection('logo');
         }
     }
 }
